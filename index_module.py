@@ -21,7 +21,6 @@ def milvus_db(documents: List[str], embeddings, connection_args: dict, collectio
     return db_index
 
 
-
 def faiss_db(documents: List[str], embeddings, save_index: bool = False, save_path: str = None, index_name: str = "pdf_index"):
 
     """

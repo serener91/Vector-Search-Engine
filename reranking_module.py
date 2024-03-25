@@ -1,7 +1,10 @@
 from sentence_transformers import CrossEncoder
 from typing import List
 
-def rerank_texts(model_name: str = "bongsoo/albert-small-kor-cross-encoder-v1", top_k: int = 3 , question: str = None, documents: List[str] = None):
+def rerank_texts(model_name: str = "bongsoo/albert-small-kor-cross-encoder-v1",
+                 top_k: int = 3,
+                 question: str = None,
+                 documents: List[str] = None):
 
     """
     Sort the given contexts by ranking the similarity with question
@@ -20,7 +23,6 @@ def rerank_texts(model_name: str = "bongsoo/albert-small-kor-cross-encoder-v1", 
     # output = "\n".join(sorted_documents)
 
     return sorted_documents
-
 
 
 if __name__ == '__main__':

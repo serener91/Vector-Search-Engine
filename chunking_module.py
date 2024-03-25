@@ -60,7 +60,6 @@ def text_chunking(documents: List[str] = None, chunk_size: int = 1000, overlap: 
     return text_chunks
 
 
-
 def token_chunking(model_name: str = None, documents: List[str] = None, chunk_size: int = 1000, overlap: float = 0.1):
 
     """
@@ -78,7 +77,6 @@ def token_chunking(model_name: str = None, documents: List[str] = None, chunk_si
     text_chunks = text_splitter.create_documents(documents)
 
     return text_chunks
-
 
 
 if __name__ == '__main__':
